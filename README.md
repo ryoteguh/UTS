@@ -11,12 +11,20 @@
 <h4>Rumusan Masalah</h4>
 
 <ol>
-  <li>Apa penyebab antrian di rumah sakit tidak efisien?</li>
-  <li>Bagaimana cara membuat antrian rumah sakit lebih efisien?</li>
-  <li>Apa konsep/teori yang perlu diimplementasikan?</li>
-  <li>seberapa efisien sistem antrian dapat ditingkatkan?</li>
+  <li>Bagaimana struktur data queue berbasis linked list dapat diimplementasikan untuk mengelola antrian pasien di rumah sakit secara efisien dan terstruktur?</li>
+  <li>Bagaimana penggunaan linked list sebagai dasar implementasi queue dapat meningkatkan fleksibilitas pengelolaan antrian dibandingkan implementasi berbasis array statis?</li>
+  <li>Bagaimana sistem antrian yang dibangun mampu menyelesaikan permasalahan nyata dalam manajemen antrian pasien, khususnya dalam hal penambahan, pengeluaran, dan pemantauan antrian secara real-time?</li>
 </ol>
 <h4><bold>Solusi</bold></h4>
+<p>Untuk menyelesaikan permasalahan tersebut, dibuat program sistem parkir menggunakan bahasa pemrograman Python dengan menerapkan struktur data Queue berbasis Linked List. 
+Adapun solusi yang diterapkan sebagai berikut: </p>
+<ol>
+  <li>Penggunaan linked list dinamis memungkinkan antrian bertumbuh dan menyusut sesuai kebutuhan tanpa batas kapasitas tetap, mengatasi keterbatasan array statis.</li>
+  <li>Operasi enqueue (penambahan pasien) dan dequeue (pemanggilan pasien) mengikuti prinsip FIFO (First In, First Out), memastikan keadilan dalam penanganan pasien berdasarkan urutan kedatangan</li>    
+  <li>Operasi peek memungkinkan petugas memantau pasien yang akan dilayani berikutnya tanpa mengganggu urutan antrian.</li>
+  <li>Operasi display memberikan visibilitas penuh terhadap seluruh antrian yang sedang berjalan, memudahkan pengawasan dan manajemen oleh petugas rumah sakit.</li>
+  <li>Menu interaktif berbasis terminal memungkinkan petugas mengelola antrian secara langsung dan intuitif.</li>
+</ol>
 <br>
 <h2><bold>Landasan Teori</bold></h2>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;Menurut Susilo et al.(2025), Struktur data adalah proses menyimpan dan mengolah data yang sesuai dengan kebutuhan sistem dan dapat dilakukan secara efisien. contoh struktur data antara lain array, linked list,stack dan queue. Pemilihan struktur data yang tepat akan mempengaruhi tingkat efisiensi dalam suatu sistem. Yang akan digunakan dalam kasus ini adalah Queue dan LinkedList.</p>
