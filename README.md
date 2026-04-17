@@ -65,3 +65,6 @@ flowchart TD
 <p>Pada input,data dimasukkan ke dalam sistem, misalnya pasien memasukkan nama dan keluhan. Selanjutnya, pada tahap proses, sistem akan mengolah data tersebut sesuai aturan yang telah dibuat, seperti menambahkan pasien ke dalam antrian atau menentukan urutan pelayanan. Terakhir, tahap output adalah hasil dari proses tersebut, misalnya menampilkan daftar antrian, pasien yang dipanggil, atau informasi lainnya </p>
 
 <h2><bold>Daftar Pusaka</bold></h2>
+- Saputra, H., Arman, S. A., Fairuzabadi, M., Impron, A., Winardi, S., Lumba, E., Syah, F., Al Anshori, F., Saputra, N., Kadang, M. O., & Hastomo, W. (2026). *Struktur data dan algoritma dalam Python: Panduan praktis*. Yash Media. https://books.google.co.id/books?id=hJHCEQAAQBAJ <br>
+- Supriyono, L. A., Carudin, C., Nugroho, H. A. S. A., Budiasto, J., Zulfa, I., & Kohsasih, K. L. (2025). *Buku ajar pengantar ilmu komputer*. Green Pustaka Indonesia. https://books.google.co.id/books?id=EqBxEQAAQBAJ <br>
+- Susilo, D., Nistrina, K., & Hartati, S. (2025). *Buku ajar struktur data*. Sonpedia. https://books.google.co.id/books?id=ysWfEQAAQBAJ
