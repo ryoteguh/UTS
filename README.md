@@ -1,10 +1,10 @@
 <h1><bold>Laporan Pengimplementasian LinkedList dan Queue di Sistem Antrian Rumah Sakit</bold></h1>
 
-<h4>Nama</h4>
+<h4>Nama|NIM|akun GitHub</h4>
 <ol>
-  <li>Ryo Teguh Budi Utomo(2501010063)</li>
-  <li>Ngakan Gede Marvyn Cakra Ajidharma(2501010078)</li>
-  <li>Andi Pratama (2501010092)</li>
+  <li>Ryo Teguh Budi Utomo |2501010063| ryoteguh</li>
+  <li>Ngakan Gede Marvyn Cakra Ajidharma |2501010078| marpinleclerc-jpg</li>
+  <li>Andi Pratama |2501010092| eyka0209akssjjs0209</li>
 </ol>
 <br>
 <h2><bold>Rumusan Masalah dan Solusi</bold></h2> 
@@ -37,38 +37,44 @@ Adapun solusi yang diterapkan sebagai berikut: </p>
 ### Flowchart System 
 ```mermaid
 flowchart TD
-    A([Start]) --> B[Tampilkan Menu]
-    B --> C[Input Pilihan]
+    A([Start]) --> B[/Tampilkan Menu/]
+    B --> C{Menu Pilihan}
 
-    C -->|1| D[Input jumlah pasien]
-    D --> E[Input nama dan keluhan]
-    E --> F[Enqueue]
-    F --> B
+    C -->|1| D[/enqueue/]
+    D --> E[/Input nama dan keluhan/]
+    E --> F[buat node baru]
+    F --> G[tambah ke antrian]
+    G --> H[/pasien ditambahkan/]
+    H --> B
 
-    C -->|2| G{Queue kosong?}
-    G -->|Tidak| H[Dequeue]
-    H --> I[Tampilkan pasien keluar]
-    I --> B
-    G -->|Ya| J[Tampilkan 'Antrian kosong']
-    J --> B
-
-    C -->|3| K{Queue kosong?}
-    K -->|Tidak| L[Peek data depan]
-    L --> B
-    K -->|Ya| M[Tampilkan 'Antrian kosong']
-    M --> B
-
-    C -->|4| N{Queue kosong?}
-    N -->|Tidak| O[Tampilkan semua antrian]
+    C -->|2| I[/dequeue/]
+    I --> J{antrian ada?}
+    J -->|Tidak| K[/antrian kosong!!!/]
+    K --> B
+    I -->|Ya| L[ambil front]
+    L --> M[hapus node]
+    M --> O[update front]
     O --> B
-    N -->|Ya| P[Tampilkan 'Queue kosong']
-    P --> B
 
-    C -->|5| Q[Keluar]
-    Q --> R([End])
-
-    C -->|Lainnya| S[Pilihan tidak valid]
+    C -->|3| P[/peek/]
+    P --> R{antrian ada?}
+    R -->|Tidak| S[/antrian kosong!!!/]
     S --> B
+    R -->|Ya| T[/tampilkan antrian paling pertama/]
+    T --> B
+
+    C -->|4| U[/Display/]
+    U --> V{antrian ada?}
+    V -->|Tidak| W[antrian kosong!!!]
+    W --> B
+    V -->|Ya| X[/Tampilkan semua antrian/]
+    X --> B
+
+    C -->|5| Y[Keluar]
+    Y --> Z([End])
+
+    C -->|Lainnya| Nue[/Pilihan tidak valid/]
+    Nue --> B
 ```
 
 
